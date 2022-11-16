@@ -10,6 +10,8 @@ import { EditComponent } from './DataHub/edit/edit.component';
 import { AboutComponent } from './DataHub/about/about.component';
 import { ResumeComponent } from './DataHub/resume/resume.component';
 import { ContactsComponent } from './DataHub/contacts/contacts.component';
+import  { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,9 @@ import { ContactsComponent } from './DataHub/contacts/contacts.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DataHubModule
+    DataHubModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
