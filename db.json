@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "Name": "Akhil Binoy",
+      "Mobile": "466373738828",
+      "email": "abc@gmail.com",
+      "channel": "exor",
+      "courses": "angular",
+      "rating":"5"
+    },
+    {
+      "id": 2,
+      "Name": "Akhil ",
+      "Mobile": "12123456",
+      "email": "xyz@gmail.com",
+      "channel": "xor",
+      "courses": "angular 14",
+      "rating":"5.4"
+    }
+  ]
+
+}
