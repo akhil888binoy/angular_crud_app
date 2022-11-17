@@ -11,6 +11,7 @@ import { AboutComponent } from './DataHub/about/about.component';
 import { ResumeComponent } from './DataHub/resume/resume.component';
 import { ContactsComponent } from './DataHub/contacts/contacts.component';
 import  { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import  { HttpClientModule } from '@angular/common/http';
     ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     DataHubModule,
     HttpClientModule

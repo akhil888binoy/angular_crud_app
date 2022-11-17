@@ -13,8 +13,8 @@ export class DataService {
     return this.http.get<Data[]>("http://localhost:3000/DataHub");
   }
   //Create Data
-  createData(data: Data[]){
-    return this.http.post<Data[]>("http://localhost:3000/DataHub", data)
+  createData(data: Data){
+    return this.http.post<Data>("http://localhost:3000/DataHub", data)
 
   }
 }
