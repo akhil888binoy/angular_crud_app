@@ -5,6 +5,7 @@ import {AboutComponent} from '../DataHub/about/about.component';
 import { ContactsComponent } from '../DataHub/contacts/contacts.component';
 import { CreateComponent } from '../DataHub/create/create.component';
 import { ResumeComponent } from '../DataHub/resume/resume.component';
+import { EditComponent } from '../DataHub/edit/edit.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,9 @@ const routes: Routes = [
   },
   {
     path: "Datahub/contacts", component: ContactsComponent
+  },
+  {
+    path: "Datahub/edit/:id", component: EditComponent
   }
 
 ];

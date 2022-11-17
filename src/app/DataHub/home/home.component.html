@@ -3,6 +3,8 @@
     <div class="col col-md-4 offset-5">
       <a routerLink="/Datahub/create" class="btn btn-primary"> Add Details</a>
     </div>
+    <br>
+    <br>
   </div>
   <div class="row">
     <div class="col">
@@ -29,7 +31,7 @@
             <td>{{data.courses}}</td>
             <td>{{data.rating}}</td>
             <td>
-              <a href="" class="btn btn-primary"> Edit </a>
+              <a [routerLink]="['/Datahub/edit', data.id]"  class="btn btn-primary"> Edit </a>
             </td>
           </tr>
         </tbody>
