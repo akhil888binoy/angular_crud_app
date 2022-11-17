@@ -9,9 +9,12 @@ import {DataService} from '../data.service';
 })
 export class HomeComponent implements OnInit {
   allData:Data[]=[];
-  constructor(private ds: DataService) { }
+  constructor(private ds: DataService) {
+    this.get()
+  }
 
   ngOnInit(): void {
+    
   }
 get(){
 

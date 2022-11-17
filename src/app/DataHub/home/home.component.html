@@ -1,1 +1,37 @@
-<p>home works!</p>
+<div class="container">
+  <div class="row mt-2">
+    <div class="col col md4 offset-5">
+      <a routerLink="/Datahub/create" class="btn btn-primary"></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Channel</th>
+            <th scope="col">Courses</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of allData">
+            <th scope="row" >{{data.id}}</th>
+            <td>{{data.Name}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.Mobile}}</td>
+            <td>{{data.channel}}</td>
+            <td>{{data.courses}}</td>
+            <td>{{data.rating}}</td>
+            <td>Edit</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
