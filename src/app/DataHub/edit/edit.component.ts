@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Data, ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from '../data.service';
+import { Data } from '../data';
 
 @Component({
   selector: 'app-edit',
@@ -8,7 +9,7 @@ import { DataService } from '../data.service';
   styleUrls: ['./edit.component.css']
 })
 export class EditComponent implements OnInit {
-  dataHubForm: Data = {
+  dataFormHub: Data = {
     id: 0,
     Name:'',
     Mobile:0,
@@ -21,7 +22,23 @@ export class EditComponent implements OnInit {
      private router: Router, private ds:DataService) { }
 
   ngOnInit(): void {
-
+    this.activatedRoute.paramMap.subscribe((param)=>{
+      var id=Number(param.get('id'));
+      this.getDatabyId(id);
+    })
   }
-
+  getDatabyId(id: number){
+    this.ds.getDatabyId(id).subscribe((data)=>{
+      this.dataFormHub = data;
+    })
+  }
+  update(){
+      this.ds.updateData(this.dataFormHub).subscribe({next:(data)=>{
+        this.router.navigate(["/Datahub/home"])
+      },
+      error:(err)=>{
+        console.log(err);
+      }
+    })
+  }
 }

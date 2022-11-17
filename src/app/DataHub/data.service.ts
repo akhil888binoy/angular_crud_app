@@ -16,13 +16,16 @@ export class DataService {
   createData(data: Data){
     return this.http.post<Data>("http://localhost:3000/DataHub", data)
 
+
   }
   //get single data by ID
   getDatabyId(id:number){
-    return this.http.get<Data>('http://localhost:3000/DataHub/${id}')
+    return this.http.get<Data>(`http://localhost:3000/DataHub/${id}`)
+
   }
   //Update data
   updateData(data:Data){
-    return this.http.put<Data>('http://localhost:3000/DataHub/${data.id}', data)
+    return this.http.put<Data>( `http://localhost:3000/DataHub/${data.id}`, data)
+
   }
 }
