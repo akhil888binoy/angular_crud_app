@@ -3,45 +3,39 @@
     <div class="col">
       <legend>Add Details Form</legend>
       <form action="">
-          <div class="mb-3">
-              <label for="exampleFormControlTextarea1"
-               class="form-label">Name</label>
-              <input type="text" name="Name" [(ngModel)]="dataFormHub.Name"  class="form-control"
-               id="exmapleFormControlInput" placeholder="Name">
-          </div>
-          <div class="mb-3">
-              <label for="exampleFormControlTextarea1"
-               class="form-label">Mobile</label>
-              <input type="text" name="Mobile" [(ngModel)]="dataFormHub.Mobile"  class="form-control"
-               id="exmapleFormControlInput" placeholder="Mobile">
-          </div>
-          <div class="mb-3">
-              <label for="exampleFormControlTextarea1"
-               class="form-label">Email</label>
-              <input type="email" name="email" [(ngModel)]="dataFormHub.email" class="form-control"
-               id="exmapleFormControlInput" placeholder="Email">
-          </div>
-          <div class="mb-3">
-              <label for="exampleFormControlTextarea1"
-               class="form-label">Channel</label>
-              <input type="text" name="channel" [(ngModel)]="dataFormHub.channel" class="form-control"
-               id="exmapleFormControlInput" placeholder="Channel">
-          </div>
-          <div class="mb-3">
-              <label for="exampleFormControlTextarea1"
-               class="form-label">Courses</label>
-              <input type="text" name="courses" [(ngModel)]="dataFormHub.courses" class="form-control"
-               id="exmapleFormControlInput" placeholder="Courses">
-          </div>
-          <div class="mb-3">
-              <label for="exampleFormControlTextarea1"
-               class="form-label">Rating</label>
-              <input type="text" name="rating" [(ngModel)]="dataFormHub.rating" class="form-control"
-               id="exmapleFormControlInput" placeholder="Rating">
-          </div>
-          <div class="col-auto">
-            <button class="btn btn-primary" (click)="postData()"  type="submit">Submit</button>
-          </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Name</label>
+          <input type="text" name="Name" [(ngModel)]="dataFormHub.Name" class="form-control"
+            id="exmapleFormControlInput" placeholder="Name">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Mobile</label>
+          <input type="text" name="Mobile" [(ngModel)]="dataFormHub.Mobile" class="form-control"
+            id="exmapleFormControlInput" placeholder="Mobile">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Email</label>
+          <input type="email" name="email" [(ngModel)]="dataFormHub.email" class="form-control"
+            id="exmapleFormControlInput" placeholder="Email">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Channel</label>
+          <input type="text" name="channel" [(ngModel)]="dataFormHub.channel" class="form-control"
+            id="exmapleFormControlInput" placeholder="Channel">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Courses</label>
+          <input type="text" name="courses" [(ngModel)]="dataFormHub.courses" class="form-control"
+            id="exmapleFormControlInput" placeholder="Courses">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Rating</label>
+          <input type="text" name="rating" [(ngModel)]="dataFormHub.rating" class="form-control"
+            id="exmapleFormControlInput" placeholder="Rating">
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-primary" (click)="postData()" type="submit">Submit</button>
+        </div>
       </form>
     </div>
   </div>

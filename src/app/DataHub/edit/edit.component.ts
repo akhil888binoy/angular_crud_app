@@ -17,6 +17,7 @@ export class EditComponent implements OnInit {
     channel:'',
     courses:'',
     rating: 0
+
   }
   constructor(private activatedRoute: ActivatedRoute,
      private router: Router, private ds:DataService) { }
